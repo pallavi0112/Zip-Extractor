@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f2f2f2" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css" />
+  <style>
+    .jstree-anchor:hover {
+      text-decoration: underline;
+      color: royalblue;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <nav>
+    </nav>
+    <header>
+      <div class="container">
+        <div class="container1">
+          <div class="heading">
+            <img src='Images/img1.png' alt='image' />
+            <span>Archive Extractor</span>
+          </div>
+          <p>Archive Extractor is a small and easy online tool that can extract over 70 types of compressed files, such
+            as 7z, zipx, rar, tar, exe, dmg and much more.</p>
+        </div>
+        <div class="container2">
+          <div class="button">
+            <form class="" method=" post" enctype="text/plain">
+              <label id='file'>
+                Choose File <br /><span>from your computer</span>
+                <button id="file-input-button" style="display:none;"></button>
+                <input type='file' id="file-input" accept="application/zip" hidden />
+              </label>
+            </form>
+          </div>
+          <div class="file-icons">
+            <div>
+              <img src='Images/GoogleDrive.png' alt='google-drive' />
+              <a href='#'>from Google Drive</a>
+            </div>
+            <div>
+              <img src='Images/Dropbox.png' alt='drop-box' />
+              <a href='#'>Dropbox</a>
+            </div>
+            <div>
+              <img src='Images/Link.png' alt='link' />
+              <a href='#'>URL</a>
+            </div>
+
+          </div>
+          <span>or drag and drop file here...</span>
+        </div>
+        <div class="container3">
+          <h4>Supported formats:</h4>
+          <p>7z, zipx, rar, tar, exe, dmg, iso, zip, msi, nrg, gz, cab, bz2, wim, ace <a href='/'>and 54 more</a></p>
+          <h4 class="h4">Supports password-protected archives</h4>
+          <h4 class="h4">Can unpack multi-part archives (zip.001, rar.part1, z01, etc)</h4>
+        </div>
+      </div>
+    </header>
+  </main>
+  <div id="jstree_tree"></div>
+  <footer>
+    <div>
+      <span>© 123apps Computer Software Est. 2012–2022</span>
+      <a href="#">Privacy</a>
+      <a href="#">Pricing</a>
+      <a href="#">Contact Us</a>
+    </div>
+    <div class="container">
+      <img src="Images/globe.png" />
+      <a href="#">English</a>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js"></script>
+  <script type="text/javascript" src="zip.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
